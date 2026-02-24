@@ -106,7 +106,7 @@ public class Main {
     private static void addTask() throws IOException {
         System.out.print("Enter task description: ");
         String description = scanner.nextLine();
-        System.out.println("Enter task status: ");
+        System.out.print("Enter task status: ");
         String status = scanner.nextLine();
         int id = tasks.isEmpty() ? 1 : tasks.getLast().id + 1;
         String updatedAt = String.valueOf(LocalDateTime.now());
