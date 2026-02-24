@@ -1,11 +1,15 @@
-📌 Task Controller CLI (Java + Jackson)
+Here’s a professional **README.md** file for your Task Controller CLI project:
+
+---
+
+# 📌 Task Controller CLI (Java + Jackson)
 
 A simple **Command Line Interface (CLI)** based Task Management application built using **Java**.
 This application allows users to **add, list, update, and delete tasks**, with data persisted in a local JSON file using the **Jackson library**.
 
 ---
 
-🚀 Features
+## 🚀 Features
 
 * ✅ Add new tasks
 * 📋 List all tasks
@@ -17,7 +21,7 @@ This application allows users to **add, list, update, and delete tasks**, with d
 
 ---
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 * **Java**
 * **Jackson Databind**
@@ -30,14 +34,14 @@ This application allows users to **add, list, update, and delete tasks**, with d
 
 ---
 
-📂 Project Structure
+## 📂 Project Structure
 
-
+```
 org.example
 │
 ├── Main.java
 └── tasks.json (generated automatically)
-
+```
 
 ---
 
@@ -48,32 +52,32 @@ When the application starts:
 1. It loads existing tasks from `tasks.json` (if available).
 2. Displays a CLI menu:
 
-
+   ```
    1. List Tasks
    2. Add Task
    3. Update Task
    4. Delete Task
    5. Exit
-
+   ```
 3. Performs the selected operation.
 4. Saves changes automatically to `tasks.json`.
 
 ---
 
-📦 Task Model
+## 📦 Task Model
 
 Each task contains:
 
-json
+```json
 {
   "id": 1,
   "description": "Complete Java project",
   "status": "In Progress",
   "updatedAt": "2026-02-24T10:30:00"
 }
+```
 
-
-Fields
+### Fields
 
 | Field       | Type   | Description            |
 | ----------- | ------ | ---------------------- |
@@ -84,27 +88,27 @@ Fields
 
 ---
 
-▶️ How to Run
+## ▶️ How to Run
 
-1️⃣ Compile
+### 1️⃣ Compile
 
 If using command line:
 
-bash
+```bash
 javac -cp ".;jackson-databind-2.x.x.jar;jackson-core-2.x.x.jar;jackson-annotations-2.x.x.jar" org/example/Main.java
+```
 
+### 2️⃣ Run
 
-2️⃣ Run
-
-bash
+```bash
 java org.example.Main
-
+```
 
 ---
 
-📌 Example Usage
+## 📌 Example Usage
 
-
+```
 Task Controller CLI:
 1. List Tasks
 2. Add Task
@@ -118,11 +122,11 @@ Enter task status:
 Pending
 
 Task added.
-
+```
 
 ---
 
-🧠 Design Decisions
+## 🧠 Design Decisions
 
 * Uses `ObjectMapper` for easy JSON serialization/deserialization.
 * Uses `TypeReference<List<Task>>` to properly read generic list data.
@@ -132,7 +136,7 @@ Task added.
 
 ---
 
-📈 Possible Improvements
+## 📈 Possible Improvements
 
 * Add status validation (Pending, In Progress, Completed)
 * Add search feature
@@ -144,6 +148,15 @@ Task added.
 
 ---
 
-📜 License
+## 📜 License
 
 This project is open-source and free to use for learning purposes.
+
+---
+
+If you'd like, I can also:
+
+* Create a **GitHub-ready version** with badges
+* Add a **project description for your resume**
+* Convert this into a **portfolio-ready project documentation**
+* Improve it to an intermediate-level project 🚀
