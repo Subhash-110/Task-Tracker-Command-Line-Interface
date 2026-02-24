@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+repositories {
+    mavenCentral()
+}
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    implementation 'com.microsoft.graph:microsoft-graph:6.+'
+}
+test {
+    useJUnitPlatform()
+}
+application {
+    mainClass = 'Main' // This will be your main class, update if needed
+}
