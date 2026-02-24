@@ -1,7 +1,3 @@
-Here’s a professional **README.md** file for your Task Controller CLI project:
-
----
-
 # 📌 Task Controller CLI (Java + Jackson)
 
 A simple **Command Line Interface (CLI)** based Task Management application built using **Java**.
@@ -151,12 +147,3 @@ Task added.
 ## 📜 License
 
 This project is open-source and free to use for learning purposes.
-
----
-
-If you'd like, I can also:
-
-* Create a **GitHub-ready version** with badges
-* Add a **project description for your resume**
-* Convert this into a **portfolio-ready project documentation**
-* Improve it to an intermediate-level project 🚀
